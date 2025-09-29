@@ -1,1 +1,7 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="X:B)~uOD;P9-hd:h0{W]" x="0" y="0"></block><block type="device_forever" id="aFw[5PJoi2b`5#WfRTHm" x="205" y="0"></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="YJ6RmrwS1,u_mV2AX8Ac" x="9" y="79"><statement name="HANDLER"><block type="device_print_message" id="HA%KI*)Hk`0-P=y0/DH6"><value name="text"><shadow type="text" id="1d%KK;?)m%/s1cAbFh=]"><field name="TEXT">Hello!</field></shadow></value><next><block type="device_print_message" id="(bT*LjW)SaVOlH^_S4Ms"><value name="text"><shadow type="text" id="P7HFGTQE3*hN*1[64G58"><field name="TEXT">This is Tools</field></shadow></value><next><block type="device_show_leds" id="uPL{4m2n/uL_C0I4Cz|]"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        # . . . #
+        `</field><next><block type="device_print_message" id="y0_ZIhn5Lnqo5hBd/9ho"><value name="text"><shadow type="text" id="~T;B_bnX26aG!Qe_`0)D"><field name="TEXT">is Brightness</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="I)U{Vpvs0jfLcLs!E7QW" x="374" y="100"><field name="NAME">Button.A</field></block></xml>
