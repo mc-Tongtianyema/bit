@@ -29,6 +29,15 @@ input.onGesture(Gesture.Shake, function () {
     steps += 1
     basic.showNumber(steps)
 })
+input.onPinPressed(TouchPin.P2, function () {
+    let index = 0
+    for (let index = 0; index <= 2; index++) {
+        music.play(music.tonePlayable(262, music.beat(BeatFraction.Quarter)), music.PlaybackMode.UntilDone)
+        basic.showNumber(3 - index)
+    }
+    music.play(music.tonePlayable(262, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
+    basic.showNumber(3 - index)
+})
 // 不是指南针还能是啥？
 input.onButtonPressed(Button.AB, function () {
     degrees = input.compassHeading()
@@ -61,5 +70,4 @@ input.onPinPressed(TouchPin.P1, function () {
 input.onSound(DetectedSound.Loud, function () {
     basic.clearScreen()
 })
-// 按下A键测试亮度，按下B键测试水平度，会有生气，哭，两种不平的表现，平的表现是笑脸
-// 按下A+B测试方向，N为北方，S为南方，其他的自己推，按下P0引脚是开始计时，目前还不能重置，读取秒数轻触微标，按下P2引脚重置步数，抖动记步，按下P3是娱乐功能，石头剪刀布，随时会取消，我之后会出游戏大全
+// 按下A键测试亮度，按下B键测试水平度，会有生气，哭，两种不平的表现，平的表现是笑脸,按下A+B测试方向，N为北方，S为南方，其他的自己推，按下P0引脚是开始计时，目前还不能重置，读取秒数轻触微标，按下P2引脚重置步数，抖动记步，按下P3是娱乐功能，石头剪刀布，随时会取消，我之后会出游戏大全
