@@ -1,6 +1,7 @@
 let start = 0
 let elapsed = 0
 let reading = 0
+let steps = 0
 let degrees = 0
 let X = 0
 let y = 0
@@ -23,6 +24,10 @@ input.onButtonPressed(Button.A, function () {
     225
     )
     basic.showNumber(reading)
+})
+input.onGesture(Gesture.Shake, function () {
+    steps += 1
+    basic.showNumber(steps)
 })
 // 不是指南针还能是啥？
 input.onButtonPressed(Button.AB, function () {
@@ -48,6 +53,9 @@ input.onButtonPressed(Button.B, function () {
     } else {
         basic.showIcon(IconNames.Happy)
     }
+})
+input.onPinPressed(TouchPin.P1, function () {
+    steps = 0
 })
 // 字面意思，是个小白都知道吧
 input.onSound(DetectedSound.Loud, function () {
