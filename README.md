@@ -1,5 +1,6 @@
-
 > 在 [https://mc-tongtianyema.github.io/bit/](https://mc-tongtianyema.github.io/bit/) 打开此页面
+> 
+> 帮助手册：[点击前往]([micro-bit/help.md at master · mc-Tongtianyema/micro-bit](https://github.com/mc-Tongtianyema/micro-bit/blob/master/help.md))
 
 ## 用作扩展
 
@@ -21,4 +22,5 @@
 #### 元数据（用于搜索、渲染）
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+  
+  <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
