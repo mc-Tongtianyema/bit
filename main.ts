@@ -7,3 +7,6 @@ input.onButtonPressed(Button.A, function () {
     )
     basic.showNumber(reading)
 })
+input.onButtonPressed(Button.B, function () {
+	
+})
