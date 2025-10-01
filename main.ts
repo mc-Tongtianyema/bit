@@ -1,3 +1,4 @@
+let reading = 0
 input.onPinPressed(TouchPin.P0, function () {
     basic.clearScreen()
 })
@@ -9,14 +10,3 @@ input.onButtonPressed(Button.A, function () {
     )
     basic.showNumber(reading)
 })
-let reading = 0
-basic.showString("Hello!")
-basic.showString("This is Tools")
-basic.showLeds(`
-    . . # . .
-    . # . # .
-    . # # # .
-    . # . # .
-    # . . . #
-    `)
-basic.showString("is Brightness")
