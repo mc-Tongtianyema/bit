@@ -4,8 +4,7 @@ let reading = 0
 let degrees = 0
 let X = 0
 let y = 0
-// 计时器开始，不用多说了吧
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onPinPressed(TouchPin.P0, function () {
     start = 0
     while ((0 as any) < (1 as any)) {
         basic.pause(1000)
@@ -13,7 +12,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     }
 })
 // 计时器输出，能多次按，想要多次按的话就多按几次，都是取的第一次开始到现在的秒数
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.showNumber(elapsed)
 })
 // 这里是测试亮度的
