@@ -12,6 +12,9 @@ input.onPinPressed(TouchPin.P0, function () {
         elapsed += 1
     }
 })
+function 才来看这里 () {
+	
+}
 // 计时器输出，能多次按，想要多次按的话就多按几次，都是取的第一次开始到现在的秒数
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.showNumber(elapsed)
@@ -70,4 +73,3 @@ input.onPinPressed(TouchPin.P1, function () {
 input.onSound(DetectedSound.Loud, function () {
     basic.clearScreen()
 })
-// 按下A键测试亮度，按下B键测试水平度，会有生气，哭，两种不平的表现，平的表现是笑脸,按下A+B测试方向，N为北方，S为南方，其他的自己推，按下P0引脚是开始计时，目前还不能重置，读取秒数轻触微标，按下P2引脚重置步数，抖动记步，按下P3是3秒倒计时,有声音
